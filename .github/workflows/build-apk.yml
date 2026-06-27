@@ -25,7 +25,12 @@ jobs:
         gradle-version: '8.7'
 
     - name: Prepare Debug Keystore
-      run: base64 -d debug.keystore.base64 > debug.keystore
+      run: |
+        if [ -f debug.keystore.base64 ]; then
+          base64 -d debug.keystore.base64 > debug.keystore
+        else
+          keytool -genkey -v -keystore debug.keystore -storepass android -alias androiddebugkey -keypass android -keyalg RSA -keysize 2048 -validity 10000 -dname "C=US, O=Android, CN=Android Debug"
+        fi
 
     - name: Prepare .env file
       run: cp .env.example .env || touch .env
