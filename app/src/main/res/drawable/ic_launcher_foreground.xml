@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    
+    <!-- Trophy Icon centered in the 66dp interior safe zone -->
+    <!-- Bowl of trophy in Neon Green style -->
+    <path
+        android:fillColor="#00FF66" 
+        android:pathData="M34,28 h40 v20 c0,11 -9,20 -20,20 s-20,-9 -20,-20 z" />
+        
+    <!-- Stem of trophy -->
+    <path
+        android:fillColor="#00FF66"
+        android:pathData="M51,68 h6 v12 h-6 z" />
+        
+    <!-- Base plate -->
+    <path
+        android:fillColor="#00FF66"
+        android:pathData="M42,80 h24 v4 h-24 z" />
+        
+    <!-- Left loop handle -->
+    <path
+        android:strokeColor="#00FF66"
+        android:strokeWidth="3"
+        android:fillColor="#00000000"
+        android:pathData="M34,34 c-6,0 -10,4 -10,10 c0,6 4,10 10,10" />
+        
+    <!-- Right loop handle -->
+    <path
+        android:strokeColor="#00FF66"
+        android:strokeWidth="3"
+        android:fillColor="#00000000"
+        android:pathData="M74,34 c6,0 10,4 10,10 c0,6 -4,10 -10,10" />
+        
+    <!-- Victory Star centered in cup backplate -->
+    <path
+        android:fillColor="#121212"
+        android:pathData="M54,34 L56,39 L61,39 L57,42 L59,47 L54,44 L49,47 L51,42 L47,39 L52,39 Z" />
+</vector>

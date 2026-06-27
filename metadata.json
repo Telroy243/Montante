@@ -1,0 +1,6 @@
+{
+  "name": "MONTANTE Neon",
+  "description": "Gestion locale de montantes et analyse de coupons par Gemini.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
