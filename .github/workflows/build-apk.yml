@@ -24,6 +24,12 @@ jobs:
       with:
         gradle-version: '8.7'
 
+    - name: Prepare Debug Keystore
+      run: base64 -d debug.keystore.base64 > debug.keystore
+
+    - name: Prepare .env file
+      run: cp .env.example .env || touch .env
+
     - name: Build Debug APK
       run: gradle assembleDebug
 
